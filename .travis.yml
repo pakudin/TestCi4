@@ -24,10 +24,10 @@ android:
     #- sys-img-x86-android-17
 
 before_install:
-    - sudo apt-get upgrade node -q
-
-install:
+    - echo Y | sudo apt-get upgrade node -q
     - node -v
     - npm install
+
+install:
     - ./gradlew build
 
