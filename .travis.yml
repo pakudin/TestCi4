@@ -24,6 +24,7 @@ android:
     #- sys-img-x86-android-17
 
 install:
+    - node -v
     - npm install
     - ./gradlew build
 
