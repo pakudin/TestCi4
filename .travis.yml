@@ -26,12 +26,10 @@ android:
 before_install:
     - echo Y | sudo apt-get install nodejs 
     - echo Y | sudo apt-get install npm
-    - sudo rm -f /usr/bin/node
-    - echo Y | sudo ln -s /usr/bin/nodejs /usr/bin/node
     - node -v
     - npm -v
     - npm install
-    - sudo npm install -g react-native-cli
+    - npm install -g react-native-cli
 
 install:
     - ./gradlew build
