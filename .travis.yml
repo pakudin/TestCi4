@@ -31,7 +31,7 @@ before_install:
     - echo Y | sudo apt-get install -y nodejs build-essential
     - node -v
     - npm -v
-    - sudo npm install -g react-native-cli
+    - sudo npm install -g react-native
     - npm install
     - react-native run-android
     #- ./node_modules/react-native/packager/packager.sh & 
