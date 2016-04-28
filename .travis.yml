@@ -31,11 +31,11 @@ before_install:
     - echo Y | sudo apt-get install -y nodejs build-essential
     - node -v
     - npm -v
-    - sudo npm install -g react-native
+    - npm install react-native-cli
     - npm install
-    - react-native run-android
+    #- react-native run-android
     #- ./node_modules/react-native/packager/packager.sh & 
 
 install:
-    - cd android; ./gradlew build
+    - cd android; ./gradlew assembleRelease
 
