@@ -24,13 +24,13 @@ android:
     #- sys-img-x86-android-17
 
 before_install:
-    - echo Y | sudo apt-get install nodejs 
-    - echo Y | sudo apt-get install npm
+    #- echo Y | sudo apt-get install nodejs 
+    #- echo Y | sudo apt-get install npm
     - node -v
     - npm -v
     - npm install -g react-native-cli
     - npm install
-    - ./node_modules/react-native/packager/packager.sh &
+    - ./node_modules/react-native/packager/packager.sh 
 
 install:
     - cd android; ./gradlew build
