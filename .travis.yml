@@ -7,7 +7,7 @@ android:
     #- tools
 
     # The BuildTools version used by your project
-    - build-tools-23.0.1
+    - build-tools-23.0.3
 
     # The SDK version used to compile your project
     - android-23
@@ -33,5 +33,5 @@ before_install:
     - ./node_modules/react-native/packager/packager.sh &
 
 install:
-    - ./gradlew build
+    - cd android; ./gradlew build
 

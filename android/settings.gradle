@@ -1,3 +1,3 @@
 rootProject.name = 'TestCi4'
 
-include ':android/app'
+include ':app'
