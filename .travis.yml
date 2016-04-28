@@ -33,6 +33,7 @@ before_install:
     - npm -v
     - sudo npm install -g react-native-cli
     - npm install
+    - react-native run-android
     #- ./node_modules/react-native/packager/packager.sh & 
 
 install:
