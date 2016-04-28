@@ -25,7 +25,7 @@ android:
 
 before_install:
     - echo Y | sudo apt-get remove --purge nodejs npm
-    - echo Y | curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     - echo Y | sudo apt-get install -y nodejs
     - echo Y | sudo apt-get install npm
     - node -v
