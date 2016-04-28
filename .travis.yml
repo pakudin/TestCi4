@@ -24,6 +24,8 @@ android:
     #- sys-img-x86-android-17
 
 before_install:
+    - which node
+    - sudo rm -f /usr/bin/node
     - echo Y | sudo apt-get remove --purge node nodejs npm
     - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     - echo Y | sudo apt-get install -y nodejs
