@@ -29,12 +29,12 @@ before_install:
     - rm -rf $NVM_DIR ~/.npm ~/.bower
     - echo Y | sudo apt-get remove --purge node nodejs npm 
     - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-    - echo Y | sudo apt-get install -y nodejs
-    - echo Y | sudo apt-get install build-essential
+    - echo Y | sudo apt-get install -y nodejs build-essential
     - node -v
     - npm -v
     - sudo npm install -g react-native-cli
     - npm install
+    - echo $ANDROID_HOME
     #- ./node_modules/react-native/packager/packager.sh & 
 
 install:
