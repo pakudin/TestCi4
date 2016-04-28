@@ -28,8 +28,9 @@ before_install:
     - echo Y | sudo apt-get install npm
     - node -v
     - npm -v
-    - npm install
     - npm install -g react-native-cli
+    - npm install
+    - ./node_modules/react-native/packager/packager.sh &
 
 install:
     - ./gradlew build
