@@ -24,8 +24,7 @@ android:
     #- sys-img-x86-android-17
 
 before_install:
-    - which node
-    - nvm ls
+    - echo $ANDROID_HOME
     - rm -rf $NVM_DIR ~/.npm ~/.bower
     - echo Y | sudo apt-get remove --purge node nodejs npm 
     - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
@@ -34,7 +33,6 @@ before_install:
     - npm -v
     - sudo npm install -g react-native-cli
     - npm install
-    - echo $ANDROID_HOME
     #- ./node_modules/react-native/packager/packager.sh & 
 
 install:
