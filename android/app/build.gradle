@@ -95,7 +95,7 @@ android {
         }
     }
 
-    
+    /*    
     signingConfigs {
         release {
             storeFile file(release_key_store)
@@ -110,7 +110,8 @@ android {
             keyPassword debug_key_alias_password
         }
     }
-    
+    */
+
     splits {
         abi {
             reset()
@@ -123,7 +124,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
+            // signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
