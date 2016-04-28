@@ -25,8 +25,9 @@ android:
 
 before_install:
     - which node
+    - nvm ls
     - sudo rm -f /usr/bin/node
-    - echo Y | sudo apt-get remove --purge node nodejs npm
+    - echo Y | sudo apt-get remove --purge node nodejs npm nvm
     - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     - echo Y | sudo apt-get install -y nodejs
     - echo Y | sudo apt-get install build-essential
