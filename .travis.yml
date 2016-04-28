@@ -27,7 +27,7 @@ before_install:
     - echo Y | sudo apt-get remove --purge nodejs npm
     - echo Y | curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
     - echo Y | sudo apt-get install -y nodejs
-    - echo Y | sudo apt-get install npm
+    - echo Y | sudo apt-get install build-essential
     - node -v
     - npm -v
     - npm install -g react-native-cli
