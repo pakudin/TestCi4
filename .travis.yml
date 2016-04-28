@@ -31,6 +31,7 @@ before_install:
     - node -v
     - npm -v
     - npm install
+    - sudo npm install -g react-native-cli
 
 install:
     - ./gradlew build
